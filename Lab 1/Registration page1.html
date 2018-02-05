@@ -1,0 +1,116 @@
+<html>
+<head>
+    <script type="text/javascript" src="validate.js"></script>
+    <script type="text/javascript" src="ShowInput.js"></script>
+</head>
+<body>
+<form action="#" name="StudentRegistration" onsubmit="return(validate());">
+
+    <table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+           cellspacing="2">
+
+        <tr>
+            <td colspan=2>
+                <center><font size=4><b>Student Registration Form</b></font></center>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td><input type=text name=textnames id="textname" size="30"></td>
+        </tr>
+
+        <tr>
+            <td>Student ID</td>
+            <td><input type="text" name="studentid" id="studentid"
+                       size="30"></td>
+        </tr>
+        <tr>
+            <td>Postal Address</td>
+            <td><input type="text" name="paddress" id="paddress" size="30"></td>
+        </tr>
+
+
+        <tr>
+            <td>Sex</td>
+            <td><input type="radio" name="sex" value="male" size="10">Male
+                <input type="radio" name="sex" value="Female" size="10">Female</td>
+        </tr>
+
+        <tr>
+            <td>Education</td>
+            <td>
+                <select name="Level_Education" id="Level_Education">
+                <option value="-1">Education :</option>
+                <option value="Masters">Masters</option>
+                <option value="Bachelors">Bachelors</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td>Term</td>
+            <td><select id="Semester" name="Semester">
+                <option value="-1">Semester:</option>
+                <option value="Spring 2018">Spring 2018</option>
+                <option value="Fall 2018">Fall 2018</option>
+                <option value="Summer 2018">Summer 2018</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td>Course</td>
+            <td><select name="Career_Option" id="Career_Option">
+                <option value="-1">Course:</option>
+                <option value="Astronomy">Astronomy</option>
+                <option value="Law">Law</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electrical">Electrical</option>
+            </select></td>
+
+        </tr>
+
+        <tr>
+            <td>State</td>
+            <td><select Name="State">
+                <option value="-1" selected>select..</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Texas">Texas</option>
+                <option value="Florida">Florida</option>
+                <option value="San Diego">San Diego</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Zip Code</td>
+            <td><input type="text" name="zipcode" id="zipcode" size="30"></td>
+
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td><input type="text" name="emailid" id="emailid" size="30"></td>
+        </tr>
+
+        <tr>
+            <td>DOB</td>
+            <td><input type="text" name="dob" id="dob" size="30"></td>
+        </tr>
+
+        <tr>
+            <td>Mobile</td>
+            <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+        </tr>
+        <tr>
+            <td><input type="reset"></td>
+            <td colspan="2">
+                <form action="CourseInfo.html">
+                <input type="submit" onclick="showInput();" value="Submit Form" />
+                </form>
+            </td>
+            <p><span id='displayEducation'></span></p>
+            <p><span id='displaySemester'></span></p>
+            <p><span id='displayCareer'></span></p>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
