@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign in</title>
+    <style>
+    button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    alignment: center;
+    }
+    .button5 {border-radius: 50%; alignment: center}
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body background="bbc.jpg">
+<div class="container" align="left">
+    <div class="row top-buffer" align="left">
+        <div class="col-lg-6 col-lg-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row-fluid">
+                        <a href="login.html">
+                            App Home
+                        </a>
+                        <h1 class="text-center">Sign in</h1>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <label>Your Email or Username</label>
+                    <input class="form-control" placeholder="Enter Your Username or Email" type="text" />
+                    <label>Your Password</label>
+                    <input class="form-control" placeholder="Enter Your Password" type="password" />
+                    <input class="button5" type="submit" onclick="window.location.href='index.html'" />
+                    <hr>
+                    <p class="text" align="left">Not a member yet?</p>
+                    <input class="button5" type="button" align="center" value="Join Us" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
